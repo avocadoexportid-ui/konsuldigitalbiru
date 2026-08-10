@@ -67,25 +67,19 @@ html {
   max-height: 500px;
 }
 
-/* ---------- FAQ Accordion ---------- */
+/* ==================== FAQ ACCORDION ==================== */
+.faq-item { transition: all 0.3s ease; }
 .faq-answer {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.4s cubic-bezier(0.22, 1, 0.36, 1),
-              padding 0.3s ease;
+  transition: max-height 0.4s ease, padding 0.4s ease;
 }
-
 .faq-item.open .faq-answer {
   max-height: 300px;
+  padding-top: 0.75rem;
 }
-
-.faq-item.open .faq-chevron {
-  transform: rotate(180deg);
-}
-
-.faq-chevron {
-  transition: transform 0.3s ease;
-}
+.faq-item.open .faq-icon { transform: rotate(45deg); }
+.faq-icon { transition: transform 0.3s ease; }
 
 /* ---------- Toast Notification ---------- */
 .toast {
