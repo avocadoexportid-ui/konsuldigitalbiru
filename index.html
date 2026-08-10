@@ -1,0 +1,347 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Konsul Digital Indonesia — Bikin Produk Digital & Website Yang Laku</title>
+<meta name="description" content="Jasa pembuatan produk digital & website untuk UMKM, coach, dan creator. Dari ide sampai jualan pertama. Garansi revisi 2x. Delivery 7-14 hari.">
+<meta name="keywords" content="jasa pembuatan website, produk digital, umkm, coach, creator, landing page, toko online, indonesia">
+<meta name="author" content="Konsul Digital Indonesia">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Konsul Digital Indonesia — Bikin Produk Digital & Website Yang Laku">
+<meta property="og:description" content="Kami bantu UMKM, coach, dan creator punya produk digital + website profesional. Dari ide sampai jualan pertama. Garansi revisi 2x. Delivery 7-14 hari.">
+<meta property="og:image" content="https://picsum.photos/seed/konsul-digital-og/1200/630">
+<meta property="og:url" content="https://konsuldigital.id">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="id_ID">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Konsul Digital Indonesia">
+<meta name="twitter:description" content="Bikin Produk Digital & Website Yang Laku, Bukan Cuma Bagus.">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231E3A5F'/%3E%3Ctext x='16' y='22' font-family='Arial,sans-serif' font-size='14' font-weight='800' fill='%23F5F3F0' text-anchor='middle'%3EKD%3C/text%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+<link rel="stylesheet" href="styles.css">
+
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        primary: '#1E3A5F',
+        'primary-dark': '#15293F',
+        'primary-light': '#3D5A80',
+        cream: '#F5F3F0',
+        'cream-dark': '#E8E4DE',
+        gold: '#D4A373',
+        'gold-dark': '#B8854F',
+      },
+      fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] },
+    }
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Konsul Digital Indonesia",
+  "description": "Jasa pembuatan produk digital & website untuk UMKM, coach, dan creator.",
+  "areaServed": "Indonesia",
+  "priceRange": "Rp 2.5jt - Rp 12jt"
+}
+</script>
+</head>
+<body>
+
+<div class="noise-overlay"></div>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="container">
+    <a href="#hero" class="logo">
+      <span class="logo-mark">KD</span>
+      <span class="logo-text">Konsul Digital <span class="text-gold">Indonesia</span></span>
+    </a>
+    <div class="nav-links">
+      <a href="#pain">Masalah</a>
+      <a href="#layanan">Layanan</a>
+      <a href="#proses">Proses</a>
+      <a href="#portfolio">Portofolio</a>
+      <a href="#harga">Harga</a>
+      <a href="#faq">FAQ</a>
+    </div>
+    <a href="#kontak" class="btn-primary nav-cta">Konsultasi Gratis</a>
+    <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+      <i data-lucide="menu"></i>
+    </button>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#pain">Masalah</a>
+  <a href="#layanan">Layanan</a>
+  <a href="#proses">Proses</a>
+  <a href="#portfolio">Portofolio</a>
+  <a href="#harga">Harga</a>
+  <a href="#faq">FAQ</a>
+  <a href="#kontak" class="btn-primary" style="margin-top:8px;justify-content:center;">Konsultasi Gratis</a>
+</div>
+
+<!-- HERO -->
+<section id="hero" class="hero">
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-content">
+        <div class="badge fade-up" style="--delay:0ms">
+          <i data-lucide="zap"></i>
+          Delivery 7-14 Hari
+        </div>
+        <h1 class="hero-title fade-up" style="--delay:100ms">
+          Bikin Produk Digital & Website Yang <span class="text-gold">Laku</span>, Bukan Cuma Bagus
+        </h1>
+        <p class="hero-sub fade-up" style="--delay:200ms">
+          Kami bantu UMKM, coach, dan creator punya produk digital + website profesional. Dari ide sampai jualan pertama. Garansi revisi 2x.
+        </p>
+        <div class="hero-cta fade-up" style="--delay:300ms">
+          <a href="#kontak" class="btn-primary btn-lg">Konsultasi Gratis <i data-lucide="arrow-right"></i></a>
+          <a href="#portfolio" class="btn-secondary btn-lg">Lihat Portofolio</a>
+        </div>
+        <div class="hero-trust fade-up" style="--delay:400ms">
+          <div class="avatars" id="heroAvatars"></div>
+          <p><strong>50+ klien</strong> puas sejak 2023</p>
+        </div>
+      </div>
+      <div class="hero-visual fade-up" style="--delay:500ms">
+        <div class="mockup-laptop">
+          <div class="laptop-screen">
+            <div class="laptop-screen-inner">
+              <div class="browser-bar">
+                <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                <div class="url">konsuldigital.id</div>
+              </div>
+              <div class="laptop-content">
+                <div class="mini-hero">
+                  <div class="mini-hero-text">
+                    <div class="mini-headline"></div>
+                    <div class="mini-headline-2"></div>
+                    <div class="mini-line" style="width:90%"></div>
+                    <div class="mini-line" style="width:70%"></div>
+                    <div class="mini-button"></div>
+                  </div>
+                  <div class="mini-hero-image"></div>
+                </div>
+                <div class="mini-products">
+                  <div class="mini-product">
+                    <div class="mini-product-img"></div>
+                    <div class="mini-product-line"></div>
+                    <div class="mini-product-line-2"></div>
+                  </div>
+                  <div class="mini-product">
+                    <div class="mini-product-img"></div>
+                    <div class="mini-product-line"></div>
+                    <div class="mini-product-line-2"></div>
+                  </div>
+                  <div class="mini-product">
+                    <div class="mini-product-img"></div>
+                    <div class="mini-product-line"></div>
+                    <div class="mini-product-line-2"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="laptop-base"></div>
+        </div>
+        <div class="mockup-phone">
+          <div class="phone-screen">
+            <div class="phone-header">HARI INI</div>
+            <div class="phone-revenue">Rp 12.4jt</div>
+            <div class="phone-revenue-label">omzet produk digital</div>
+            <div class="phone-chart">
+              <div class="phone-bar" style="height:30%"></div>
+              <div class="phone-bar" style="height:55%"></div>
+              <div class="phone-bar" style="height:40%"></div>
+              <div class="phone-bar active" style="height:85%"></div>
+              <div class="phone-bar" style="height:60%"></div>
+              <div class="phone-bar" style="height:70%"></div>
+            </div>
+            <div class="phone-metric">
+              <span>Order</span><strong>48</strong>
+            </div>
+            <div class="phone-metric">
+              <span>Visitor</span><strong>1.2k</strong>
+            </div>
+          </div>
+        </div>
+        <div class="floating-card">
+          <i data-lucide="trending-up"></i>
+          <div>
+            <div class="num">+150%</div>
+            <div class="label">conversion</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PAIN POINTS -->
+<section id="pain" class="section">
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="section-eyebrow">Masalah Umum</span>
+      <h2 class="section-title">Punya Skill Tapi Bingung Jualnya Dimana?</h2>
+      <p class="section-sub">Kami tahu frustrasinya. Udah capek bikin produk, tapi hasilnya gak sesuai ekspektasi.</p>
+    </div>
+    <div class="pain-grid" id="painGrid"></div>
+  </div>
+</section>
+
+<!-- SOLUTIONS / SERVICES -->
+<section id="layanan" class="section section-cream">
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="section-eyebrow">Layanan</span>
+      <h2 class="section-title">End-to-End. Kamu Fokus Jualan, Teknis Urusan Kami</h2>
+      <p class="section-sub">Dari ide, desain, development, sampai launch. Semua di-handle tim kami.</p>
+    </div>
+    <div class="services-grid" id="servicesGrid"></div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="proses" class="section">
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="section-eyebrow">Proses Kerja</span>
+      <h2 class="section-title">4 Langkah Sampai Go Live</h2>
+      <p class="section-sub">Alur kerja transparan, kamu tahu progress tiap minggunya.</p>
+    </div>
+    <div class="process-timeline" id="processTimeline"></div>
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio" class="section section-cream">
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="section-eyebrow">Portofolio</span>
+      <h2 class="section-title">Yang Udah Kami Kerjain</h2>
+      <p class="section-sub">Hasil nyata, bukan mockup. Klien yang udah go-live dan jualan.</p>
+    </div>
+    <div class="portfolio-grid" id="portfolioGrid"></div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section id="harga" class="section">
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="section-eyebrow">Harga Paket</span>
+      <h2 class="section-title">Paket Transparan, No Hidden Fee</h2>
+      <p class="section-sub">Pilih sesuai kebutuhan. Semua paket sudah include konsultasi awal.</p>
+    </div>
+    <div class="pricing-grid" id="pricingGrid"></div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimoni" class="section section-cream">
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="section-eyebrow">Testimoni</span>
+      <h2 class="section-title">Kata Mereka</h2>
+      <p class="section-sub">Cerita langsung dari klien yang udah go-live bersama kami.</p>
+    </div>
+    <div class="testimonial-grid" id="testimonialGrid"></div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="section">
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="section-eyebrow">FAQ</span>
+      <h2 class="section-title">Pertanyaan yang Sering Ditanyain</h2>
+      <p class="section-sub">Belum nemu jawabannya? Chat WhatsApp kami aja.</p>
+    </div>
+    <div class="faq-list" id="faqList"></div>
+  </div>
+</section>
+
+<!-- FINAL CTA + CONTACT -->
+<section id="kontak" class="section">
+  <div class="container">
+    <div class="cta-section fade-up">
+      <div class="cta-grid">
+        <div>
+          <h2 class="cta-title">Siap Punya Produk Digital & Website Sendiri?</h2>
+          <p class="cta-sub">Book call 15 menit gratis. Kita bedah bisnis kamu + kasih roadmap jelas. Tanpa jualan keras.</p>
+          <a href="https://wa.me/628xxxxx" target="_blank" rel="noopener" class="cta-wa-btn">
+            <i data-lucide="message-circle"></i>
+            Chat WhatsApp Sekarang
+          </a>
+          <div class="cta-trust">
+            <div><i data-lucide="check"></i> Response &lt; 2 jam</div>
+            <div><i data-lucide="check"></i> Tanpa biaya konsultasi</div>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <h3 class="form-title">Kirim Pesan</h3>
+          <div class="form-group">
+            <label class="form-label" for="nama">Nama Lengkap</label>
+            <input class="form-input" type="text" id="nama" name="nama" placeholder="Nama kamu" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="email">Email</label>
+            <input class="form-input" type="email" id="email" name="email" placeholder="email@kamu.com" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="wa">No. WhatsApp</label>
+            <input class="form-input" type="tel" id="wa" name="wa" placeholder="08xxxxxxxxxx" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="pesan">Pesan</label>
+            <textarea class="form-textarea" id="pesan" name="pesan" placeholder="Cerita singkat kebutuhan kamu..." required></textarea>
+          </div>
+          <button type="submit" class="form-submit">
+            Kirim via Email <i data-lucide="send"></i>
+          </button>
+          <p class="form-note">Atau langsung chat WhatsApp di kiri.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-left">
+      <a href="#hero" class="logo">
+        <span class="logo-mark">KD</span>
+        <span class="logo-text">Konsul Digital Indonesia</span>
+      </a>
+      <p class="footer-copy">© 2026 Konsul Digital Indonesia. All rights reserved.</p>
+    </div>
+    <div class="footer-socials">
+      <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+      <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+      <a href="https://wa.me/628xxxxx" aria-label="WhatsApp"><i data-lucide="message-circle"></i></a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
