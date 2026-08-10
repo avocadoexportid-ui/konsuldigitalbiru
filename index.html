@@ -1,347 +1,447 @@
-<!-- index.html -->
 <!DOCTYPE html>
-<html lang="id">
+<html lang="id" class="scroll-smooth">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Konsul Digital Indonesia — Bikin Produk Digital & Website Yang Laku</title>
-<meta name="description" content="Jasa pembuatan produk digital & website untuk UMKM, coach, dan creator. Dari ide sampai jualan pertama. Garansi revisi 2x. Delivery 7-14 hari.">
-<meta name="keywords" content="jasa pembuatan website, produk digital, umkm, coach, creator, landing page, toko online, indonesia">
-<meta name="author" content="Konsul Digital Indonesia">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<!-- Open Graph -->
-<meta property="og:title" content="Konsul Digital Indonesia — Bikin Produk Digital & Website Yang Laku">
-<meta property="og:description" content="Kami bantu UMKM, coach, dan creator punya produk digital + website profesional. Dari ide sampai jualan pertama. Garansi revisi 2x. Delivery 7-14 hari.">
-<meta property="og:image" content="https://picsum.photos/seed/konsul-digital-og/1200/630">
-<meta property="og:url" content="https://konsuldigital.id">
-<meta property="og:type" content="website">
-<meta property="og:locale" content="id_ID">
+  <!-- ===== SEO ===== -->
+  <title>Konsul Digital Indonesia — Bikin Produk Digital & Website Yang Laku</title>
+  <meta name="description" content="Jasa pembuatan produk digital & website untuk UMKM, coach, dan creator. Dari ide sampai jualan pertama. Garansi revisi 2x. Delivery 7-14 hari." />
+  <meta name="keywords" content="jasa website umkm, jasa produk digital, landing page, course online, toko online, jasa website murah" />
+  <meta name="author" content="Konsul Digital Indonesia" />
+  <meta name="robots" content="index, follow" />
 
-<!-- Twitter -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Konsul Digital Indonesia">
-<meta name="twitter:description" content="Bikin Produk Digital & Website Yang Laku, Bukan Cuma Bagus.">
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Konsul Digital Indonesia — Bikin Produk Digital & Website Yang Laku" />
+  <meta property="og:description" content="Jasa pembuatan produk digital & website untuk UMKM, coach, dan creator. Delivery 7-14 hari." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&h=630&fit=crop" />
+  <meta property="og:url" content="https://konsuldigital.id" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Konsul Digital Indonesia" />
+  <meta name="twitter:description" content="Bikin Produk Digital & Website Yang Laku, Bukan Cuma Bagus." />
 
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231E3A5F'/%3E%3Ctext x='16' y='22' font-family='Arial,sans-serif' font-size='14' font-weight='800' fill='%23F5F3F0' text-anchor='middle'%3EKD%3C/text%3E%3C/svg%3E">
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
 
-<script src="https://cdn.tailwindcss.com"></script>
-<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
-<link rel="stylesheet" href="styles.css">
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
 
-<script>
-tailwind.config = {
-  theme: {
-    extend: {
-      colors: {
-        primary: '#1E3A5F',
-        'primary-dark': '#15293F',
-        'primary-light': '#3D5A80',
-        cream: '#F5F3F0',
-        'cream-dark': '#E8E4DE',
-        gold: '#D4A373',
-        'gold-dark': '#B8854F',
+  <!-- Tailwind Config -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#4A5D23',
+            'primary-dark': '#3A4A1C',
+            'primary-light': '#6B8038',
+            'primary-lighter': '#8A9F50',
+            cream: '#F5F3F0',
+            'cream-dark': '#E8E5E0',
+            gold: '#D4A373',
+            'gold-dark': '#B88652',
+            'gold-light': '#E5B98C',
+          },
+          fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] },
+          boxShadow: {
+            soft: '0 2px 15px rgba(74, 93, 35, 0.08)',
+            'soft-lg': '0 12px 40px rgba(74, 93, 35, 0.15)',
+            gold: '0 8px 30px rgba(212, 163, 115, 0.35)',
+          },
+        },
       },
-      fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] },
     }
-  }
-}
-</script>
+  </script>
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "ProfessionalService",
-  "name": "Konsul Digital Indonesia",
-  "description": "Jasa pembuatan produk digital & website untuk UMKM, coach, dan creator.",
-  "areaServed": "Indonesia",
-  "priceRange": "Rp 2.5jt - Rp 12jt"
-}
-</script>
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body>
 
-<div class="noise-overlay"></div>
+<body class="bg-cream text-primary-dark font-sans antialiased overflow-x-hidden">
 
-<!-- NAVBAR -->
-<nav class="navbar" id="navbar">
-  <div class="container">
-    <a href="#hero" class="logo">
-      <span class="logo-mark">KD</span>
-      <span class="logo-text">Konsul Digital <span class="text-gold">Indonesia</span></span>
-    </a>
-    <div class="nav-links">
-      <a href="#pain">Masalah</a>
-      <a href="#layanan">Layanan</a>
-      <a href="#proses">Proses</a>
-      <a href="#portfolio">Portofolio</a>
-      <a href="#harga">Harga</a>
-      <a href="#faq">FAQ</a>
-    </div>
-    <a href="#kontak" class="btn-primary nav-cta">Konsultasi Gratis</a>
-    <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
-      <i data-lucide="menu"></i>
-    </button>
-  </div>
-</nav>
-<div class="mobile-menu" id="mobileMenu">
-  <a href="#pain">Masalah</a>
-  <a href="#layanan">Layanan</a>
-  <a href="#proses">Proses</a>
-  <a href="#portfolio">Portofolio</a>
-  <a href="#harga">Harga</a>
-  <a href="#faq">FAQ</a>
-  <a href="#kontak" class="btn-primary" style="margin-top:8px;justify-content:center;">Konsultasi Gratis</a>
-</div>
+  <!-- ============ NAVBAR ============ -->
+  <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 md:h-20">
+        <!-- Logo -->
+        <a href="#hero" class="flex items-center gap-2 font-bold text-lg">
+          <span class="w-9 h-9 rounded-xl bg-primary flex items-center justify-center text-cream">
+            <i data-lucide="zap" class="w-5 h-5"></i>
+          </span>
+          <span class="text-primary">Konsul<span class="text-gold">Digital.</span></span>
+        </a>
 
-<!-- HERO -->
-<section id="hero" class="hero">
-  <div class="container">
-    <div class="hero-grid">
-      <div class="hero-content">
-        <div class="badge fade-up" style="--delay:0ms">
-          <i data-lucide="zap"></i>
-          Delivery 7-14 Hari
-        </div>
-        <h1 class="hero-title fade-up" style="--delay:100ms">
-          Bikin Produk Digital & Website Yang <span class="text-gold">Laku</span>, Bukan Cuma Bagus
-        </h1>
-        <p class="hero-sub fade-up" style="--delay:200ms">
-          Kami bantu UMKM, coach, dan creator punya produk digital + website profesional. Dari ide sampai jualan pertama. Garansi revisi 2x.
-        </p>
-        <div class="hero-cta fade-up" style="--delay:300ms">
-          <a href="#kontak" class="btn-primary btn-lg">Konsultasi Gratis <i data-lucide="arrow-right"></i></a>
-          <a href="#portfolio" class="btn-secondary btn-lg">Lihat Portofolio</a>
-        </div>
-        <div class="hero-trust fade-up" style="--delay:400ms">
-          <div class="avatars" id="heroAvatars"></div>
-          <p><strong>50+ klien</strong> puas sejak 2023</p>
-        </div>
-      </div>
-      <div class="hero-visual fade-up" style="--delay:500ms">
-        <div class="mockup-laptop">
-          <div class="laptop-screen">
-            <div class="laptop-screen-inner">
-              <div class="browser-bar">
-                <span class="dot"></span><span class="dot"></span><span class="dot"></span>
-                <div class="url">konsuldigital.id</div>
-              </div>
-              <div class="laptop-content">
-                <div class="mini-hero">
-                  <div class="mini-hero-text">
-                    <div class="mini-headline"></div>
-                    <div class="mini-headline-2"></div>
-                    <div class="mini-line" style="width:90%"></div>
-                    <div class="mini-line" style="width:70%"></div>
-                    <div class="mini-button"></div>
-                  </div>
-                  <div class="mini-hero-image"></div>
-                </div>
-                <div class="mini-products">
-                  <div class="mini-product">
-                    <div class="mini-product-img"></div>
-                    <div class="mini-product-line"></div>
-                    <div class="mini-product-line-2"></div>
-                  </div>
-                  <div class="mini-product">
-                    <div class="mini-product-img"></div>
-                    <div class="mini-product-line"></div>
-                    <div class="mini-product-line-2"></div>
-                  </div>
-                  <div class="mini-product">
-                    <div class="mini-product-img"></div>
-                    <div class="mini-product-line"></div>
-                    <div class="mini-product-line-2"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="laptop-base"></div>
-        </div>
-        <div class="mockup-phone">
-          <div class="phone-screen">
-            <div class="phone-header">HARI INI</div>
-            <div class="phone-revenue">Rp 12.4jt</div>
-            <div class="phone-revenue-label">omzet produk digital</div>
-            <div class="phone-chart">
-              <div class="phone-bar" style="height:30%"></div>
-              <div class="phone-bar" style="height:55%"></div>
-              <div class="phone-bar" style="height:40%"></div>
-              <div class="phone-bar active" style="height:85%"></div>
-              <div class="phone-bar" style="height:60%"></div>
-              <div class="phone-bar" style="height:70%"></div>
-            </div>
-            <div class="phone-metric">
-              <span>Order</span><strong>48</strong>
-            </div>
-            <div class="phone-metric">
-              <span>Visitor</span><strong>1.2k</strong>
-            </div>
-          </div>
-        </div>
-        <div class="floating-card">
-          <i data-lucide="trending-up"></i>
-          <div>
-            <div class="num">+150%</div>
-            <div class="label">conversion</div>
-          </div>
+        <!-- Desktop Nav -->
+        <div class="hidden lg:flex items-center gap-8" id="nav-links"></div>
+
+        <!-- CTA + Mobile Toggle -->
+        <div class="flex items-center gap-3">
+          <a href="#kontak" class="hidden sm:inline-flex btn-primary text-sm px-5 py-2.5">
+            Konsultasi Gratis
+          </a>
+          <button id="mobile-toggle" class="lg:hidden p-2 rounded-lg hover:bg-cream-dark/50" aria-label="Menu">
+            <i data-lucide="menu" class="w-6 h-6" id="menu-icon"></i>
+          </button>
         </div>
       </div>
     </div>
-  </div>
-</section>
 
-<!-- PAIN POINTS -->
-<section id="pain" class="section">
-  <div class="container">
-    <div class="section-header fade-up">
-      <span class="section-eyebrow">Masalah Umum</span>
-      <h2 class="section-title">Punya Skill Tapi Bingung Jualnya Dimana?</h2>
-      <p class="section-sub">Kami tahu frustrasinya. Udah capek bikin produk, tapi hasilnya gak sesuai ekspektasi.</p>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="lg:hidden hidden bg-cream border-t border-cream-dark">
+      <div class="px-4 py-4 space-y-1" id="mobile-nav-links"></div>
     </div>
-    <div class="pain-grid" id="painGrid"></div>
-  </div>
-</section>
+  </nav>
 
-<!-- SOLUTIONS / SERVICES -->
-<section id="layanan" class="section section-cream">
-  <div class="container">
-    <div class="section-header fade-up">
-      <span class="section-eyebrow">Layanan</span>
-      <h2 class="section-title">End-to-End. Kamu Fokus Jualan, Teknis Urusan Kami</h2>
-      <p class="section-sub">Dari ide, desain, development, sampai launch. Semua di-handle tim kami.</p>
+  <!-- ============ HERO ============ -->
+  <section id="hero" class="relative pt-28 md:pt-36 pb-16 md:pb-24 overflow-hidden">
+    <div class="absolute top-0 right-0 w-[600px] h-[600px] bg-gold/10 rounded-full blur-3xl -z-0"></div>
+    <div class="absolute bottom-0 left-0 w-[400px] h-[400px] bg-primary/10 rounded-full blur-3xl -z-0"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <!-- Left -->
+        <div class="fade-in">
+          <span class="badge-primary">
+            <i data-lucide="zap" class="w-3.5 h-3.5"></i>
+            Solusi Digital Terdepan
+          </span>
+          <h1 class="mt-6 text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight text-primary-dark">
+            Bikin Produk Digital & Website Yang <span class="text-gold">Laku</span>, Bukan Cuma Bagus
+          </h1>
+          <p class="mt-6 text-base md:text-lg text-primary/70 leading-relaxed max-w-xl">
+            Kami bantu UMKM, coach, dan creator punya produk digital + website profesional. Dari ide sampai jualan pertama. <strong class="text-primary">Garansi revisi 2x.</strong>
+          </p>
+          <div class="mt-8 flex flex-col sm:flex-row gap-4">
+            <a href="#kontak" class="btn-primary text-base px-7 py-3.5">
+              <i data-lucide="message-circle" class="w-5 h-5"></i>
+              Konsultasi Gratis
+            </a>
+            <a href="#portfolio" class="btn-outline text-base px-7 py-3.5">
+              <i data-lucide="eye" class="w-5 h-5"></i>
+              Lihat Portofolio
+            </a>
+          </div>
+
+          <!-- Mini stats -->
+          <div class="mt-10 flex items-center gap-8">
+            <div>
+              <p class="text-2xl font-bold text-primary">50+</p>
+              <p class="text-sm text-primary/60">Proyek Selesai</p>
+            </div>
+            <div class="w-px h-10 bg-cream-dark"></div>
+            <div>
+              <p class="text-2xl font-bold text-primary">7-14</p>
+              <p class="text-sm text-primary/60">Hari Delivery</p>
+            </div>
+            <div class="w-px h-10 bg-cream-dark"></div>
+            <div>
+              <p class="text-2xl font-bold text-primary">2x</p>
+              <p class="text-sm text-primary/60">Garansi Revisi</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Mockup -->
+        <div class="relative fade-in" style="animation-delay: 0.2s;">
+          <!-- Laptop Mockup -->
+          <div class="relative">
+            <div class="bg-primary-dark rounded-t-2xl p-3 shadow-soft-lg">
+              <div class="flex gap-1.5 mb-2 px-2">
+                <div class="w-3 h-3 rounded-full bg-red-400"></div>
+                <div class="w-3 h-3 rounded-full bg-yellow-400"></div>
+                <div class="w-3 h-3 rounded-full bg-green-400"></div>
+              </div>
+              <div class="bg-cream rounded-lg overflow-hidden aspect-[16/10]">
+                <div class="bg-gradient-to-br from-primary to-primary-light p-4 md:p-6 h-full">
+                  <div class="bg-cream/95 rounded-lg h-full p-4 flex flex-col">
+                    <div class="flex items-center justify-between mb-4">
+                      <div class="h-3 w-24 bg-primary/30 rounded"></div>
+                      <div class="h-3 w-12 bg-gold/40 rounded"></div>
+                    </div>
+                    <div class="grid grid-cols-3 gap-3 mb-4">
+                      <div class="bg-cream-dark/60 rounded-lg p-2.5">
+                        <div class="h-2 w-full bg-primary/30 rounded mb-1.5"></div>
+                        <div class="h-4 w-2/3 bg-primary rounded"></div>
+                      </div>
+                      <div class="bg-cream-dark/60 rounded-lg p-2.5">
+                        <div class="h-2 w-full bg-gold/40 rounded mb-1.5"></div>
+                        <div class="h-4 w-2/3 bg-gold rounded"></div>
+                      </div>
+                      <div class="bg-cream-dark/60 rounded-lg p-2.5">
+                        <div class="h-2 w-full bg-primary/30 rounded mb-1.5"></div>
+                        <div class="h-4 w-2/3 bg-primary rounded"></div>
+                      </div>
+                    </div>
+                    <div class="flex-1 bg-cream-dark/40 rounded-lg p-3 flex items-end gap-2">
+                      <div class="w-1/5 bg-primary rounded-t-md h-1/2"></div>
+                      <div class="w-1/5 bg-primary-light rounded-t-md h-3/4"></div>
+                      <div class="w-1/5 bg-gold rounded-t-md h-full"></div>
+                      <div class="w-1/5 bg-primary-lighter rounded-t-md h-2/3"></div>
+                      <div class="w-1/5 bg-primary rounded-t-md h-4/5"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bg-primary-dark h-3 rounded-b-2xl mx-auto w-1/3"></div>
+          </div>
+
+          <!-- Phone Mockup -->
+          <div class="absolute -bottom-6 -left-4 md:-left-8 w-28 md:w-36 animate-float">
+            <div class="bg-primary-dark rounded-2xl p-1.5 shadow-gold">
+              <div class="bg-cream rounded-xl overflow-hidden aspect-[9/16]">
+                <div class="bg-gradient-to-b from-primary to-primary-light h-full p-2.5 flex flex-col">
+                  <div class="bg-cream/95 rounded-lg p-2 flex-1 flex flex-col">
+                    <div class="h-2 w-1/2 bg-primary rounded mb-2"></div>
+                    <div class="h-12 bg-gradient-to-br from-gold to-gold-dark rounded-lg mb-2"></div>
+                    <div class="space-y-1.5">
+                      <div class="h-1.5 w-full bg-cream-dark rounded"></div>
+                      <div class="h-1.5 w-4/5 bg-cream-dark rounded"></div>
+                      <div class="h-1.5 w-3/4 bg-cream-dark rounded"></div>
+                    </div>
+                    <div class="mt-auto bg-primary rounded-lg py-1.5 text-center">
+                      <div class="h-2 w-2/3 bg-cream mx-auto rounded"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Floating Card -->
+          <div class="absolute -top-4 -right-2 md:-right-6 bg-cream rounded-xl shadow-soft-lg p-3 md:p-4 border border-cream-dark animate-float" style="animation-delay: 1s;">
+            <div class="flex items-center gap-2 md:gap-3">
+              <div class="w-9 h-9 md:w-10 md:h-10 rounded-lg bg-green-100 flex items-center justify-center">
+                <i data-lucide="trending-up" class="w-5 h-5 text-green-600"></i>
+              </div>
+              <div>
+                <p class="text-lg md:text-xl font-bold text-primary">+150%</p>
+                <p class="text-[10px] md:text-xs text-primary/60">Conversion Rate</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="services-grid" id="servicesGrid"></div>
-  </div>
-</section>
+  </section>
 
-<!-- PROCESS -->
-<section id="proses" class="section">
-  <div class="container">
-    <div class="section-header fade-up">
-      <span class="section-eyebrow">Proses Kerja</span>
-      <h2 class="section-title">4 Langkah Sampai Go Live</h2>
-      <p class="section-sub">Alur kerja transparan, kamu tahu progress tiap minggunya.</p>
+  <!-- ============ PAIN POINT ============ -->
+  <section id="pain-point" class="py-16 md:py-24 bg-cream-dark/40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-12 fade-in">
+        <span class="badge-gold">Masalah Umum</span>
+        <h2 class="mt-4 text-3xl md:text-4xl font-bold text-primary-dark">Punya Skill Tapi Bingung Jualnya Dimana?</h2>
+        <p class="mt-4 text-primary/60">Kalo kamu ngalamin salah satu ini, kamu bukan sendirian.</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6" id="pain-cards"></div>
     </div>
-    <div class="process-timeline" id="processTimeline"></div>
-  </div>
-</section>
+  </section>
 
-<!-- PORTFOLIO -->
-<section id="portfolio" class="section section-cream">
-  <div class="container">
-    <div class="section-header fade-up">
-      <span class="section-eyebrow">Portofolio</span>
-      <h2 class="section-title">Yang Udah Kami Kerjain</h2>
-      <p class="section-sub">Hasil nyata, bukan mockup. Klien yang udah go-live dan jualan.</p>
+  <!-- ============ SOLUSI + LAYANAN ============ -->
+  <section id="layanan" class="py-16 md:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-12 fade-in">
+        <span class="badge-primary">Solusi Kami</span>
+        <h2 class="mt-4 text-3xl md:text-4xl font-bold text-primary-dark">End-to-End. Kamu Fokus Jualan, Teknis Urusan Kami</h2>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6" id="service-cards"></div>
     </div>
-    <div class="portfolio-grid" id="portfolioGrid"></div>
-  </div>
-</section>
+  </section>
 
-<!-- PRICING -->
-<section id="harga" class="section">
-  <div class="container">
-    <div class="section-header fade-up">
-      <span class="section-eyebrow">Harga Paket</span>
-      <h2 class="section-title">Paket Transparan, No Hidden Fee</h2>
-      <p class="section-sub">Pilih sesuai kebutuhan. Semua paket sudah include konsultasi awal.</p>
+  <!-- ============ PROSES KERJA ============ -->
+  <section id="proses" class="py-16 md:py-24 bg-primary text-cream">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-16 fade-in">
+        <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-cream/10 text-cream text-sm font-medium border border-cream/20">
+          <i data-lucide="git-branch" class="w-3.5 h-3.5"></i>
+          Proses Kerja
+        </span>
+        <h2 class="mt-4 text-3xl md:text-4xl font-bold">4 Langkah Sampai Go Live</h2>
+      </div>
+      <div class="grid md:grid-cols-4 gap-8 relative" id="process-timeline">
+        <!-- Line connector for desktop -->
+        <div class="hidden md:block absolute top-8 left-0 right-0 h-0.5 bg-cream/20">
+          <div class="h-full w-full bg-gradient-to-r from-gold via-gold-light to-gold"></div>
+        </div>
+      </div>
     </div>
-    <div class="pricing-grid" id="pricingGrid"></div>
-  </div>
-</section>
+  </section>
 
-<!-- TESTIMONIALS -->
-<section id="testimoni" class="section section-cream">
-  <div class="container">
-    <div class="section-header fade-up">
-      <span class="section-eyebrow">Testimoni</span>
-      <h2 class="section-title">Kata Mereka</h2>
-      <p class="section-sub">Cerita langsung dari klien yang udah go-live bersama kami.</p>
+  <!-- ============ PORTOFOLIO ============ -->
+  <section id="portfolio" class="py-16 md:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-12 fade-in">
+        <span class="badge-gold">Portofolio</span>
+        <h2 class="mt-4 text-3xl md:text-4xl font-bold text-primary-dark">Yang Udah Kami Kerjain</h2>
+        <p class="mt-4 text-primary/60">Hasil nyata, bukan sekadar janji.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6" id="portfolio-grid"></div>
     </div>
-    <div class="testimonial-grid" id="testimonialGrid"></div>
-  </div>
-</section>
+  </section>
 
-<!-- FAQ -->
-<section id="faq" class="section">
-  <div class="container">
-    <div class="section-header fade-up">
-      <span class="section-eyebrow">FAQ</span>
-      <h2 class="section-title">Pertanyaan yang Sering Ditanyain</h2>
-      <p class="section-sub">Belum nemu jawabannya? Chat WhatsApp kami aja.</p>
+  <!-- ============ HARGA PAKET ============ -->
+  <section id="harga" class="py-16 md:py-24 bg-cream-dark/40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-12 fade-in">
+        <span class="badge-primary">Harga Paket</span>
+        <h2 class="mt-4 text-3xl md:text-4xl font-bold text-primary-dark">Paket Transparan, No Hidden Fee</h2>
+        <p class="mt-4 text-primary/60">Pilih yang sesuai kebutuhan. Semua paket bisa upgrade kapan saja.</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6 lg:gap-8 max-w-5xl mx-auto" id="pricing-cards"></div>
     </div>
-    <div class="faq-list" id="faqList"></div>
-  </div>
-</section>
+  </section>
 
-<!-- FINAL CTA + CONTACT -->
-<section id="kontak" class="section">
-  <div class="container">
-    <div class="cta-section fade-up">
-      <div class="cta-grid">
-        <div>
-          <h2 class="cta-title">Siap Punya Produk Digital & Website Sendiri?</h2>
-          <p class="cta-sub">Book call 15 menit gratis. Kita bedah bisnis kamu + kasih roadmap jelas. Tanpa jualan keras.</p>
-          <a href="https://wa.me/628xxxxx" target="_blank" rel="noopener" class="cta-wa-btn">
-            <i data-lucide="message-circle"></i>
+  <!-- ============ TESTIMONI ============ -->
+  <section id="testimoni" class="py-16 md:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-12 fade-in">
+        <span class="badge-gold">Testimoni</span>
+        <h2 class="mt-4 text-3xl md:text-4xl font-bold text-primary-dark">Kata Mereka</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6" id="testimonial-cards"></div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq" class="py-16 md:py-24 bg-cream-dark/40">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12 fade-in">
+        <span class="badge-primary">FAQ</span>
+        <h2 class="mt-4 text-3xl md:text-4xl font-bold text-primary-dark">Pertanyaan Yang Sering Ditanyain</h2>
+      </div>
+      <div class="space-y-4" id="faq-list"></div>
+    </div>
+  </section>
+
+  <!-- ============ CTA FINAL + KONTAK ============ -->
+  <section id="kontak" class="py-16 md:py-24 bg-primary text-cream relative overflow-hidden">
+    <div class="absolute top-0 left-0 w-96 h-96 bg-gold/20 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-0 right-0 w-96 h-96 bg-primary-light/30 rounded-full blur-3xl"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <!-- Left: CTA -->
+        <div class="fade-in">
+          <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
+            Siap Punya Produk Digital & Website Sendiri?
+          </h2>
+          <p class="mt-6 text-cream/80 text-lg leading-relaxed">
+            Book call 15 menit gratis. Kita bedah bisnis kamu + kasih roadmap.
+          </p>
+
+          <a href="https://wa.me/628xxxxx" target="_blank" rel="noopener" class="mt-8 inline-flex items-center gap-3 bg-gold hover:bg-gold-dark text-primary-dark font-semibold px-8 py-4 rounded-xl transition-all duration-300 hover:scale-105 shadow-gold text-base">
+            <i data-lucide="message-circle" class="w-5 h-5"></i>
             Chat WhatsApp Sekarang
           </a>
-          <div class="cta-trust">
-            <div><i data-lucide="check"></i> Response &lt; 2 jam</div>
-            <div><i data-lucide="check"></i> Tanpa biaya konsultasi</div>
+
+          <div class="mt-8 flex items-center gap-6 text-cream/70 text-sm">
+            <div class="flex items-center gap-2">
+              <i data-lucide="clock" class="w-4 h-4"></i>
+              <span>Response < 2 jam</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i data-lucide="shield-check" class="w-4 h-4"></i>
+              <span>Garansi revisi 2x</span>
+            </div>
           </div>
         </div>
-        <form class="contact-form" id="contactForm">
-          <h3 class="form-title">Kirim Pesan</h3>
-          <div class="form-group">
-            <label class="form-label" for="nama">Nama Lengkap</label>
-            <input class="form-input" type="text" id="nama" name="nama" placeholder="Nama kamu" required>
-          </div>
-          <div class="form-group">
-            <label class="form-label" for="email">Email</label>
-            <input class="form-input" type="email" id="email" name="email" placeholder="email@kamu.com" required>
-          </div>
-          <div class="form-group">
-            <label class="form-label" for="wa">No. WhatsApp</label>
-            <input class="form-input" type="tel" id="wa" name="wa" placeholder="08xxxxxxxxxx" required>
-          </div>
-          <div class="form-group">
-            <label class="form-label" for="pesan">Pesan</label>
-            <textarea class="form-textarea" id="pesan" name="pesan" placeholder="Cerita singkat kebutuhan kamu..." required></textarea>
-          </div>
-          <button type="submit" class="form-submit">
-            Kirim via Email <i data-lucide="send"></i>
-          </button>
-          <p class="form-note">Atau langsung chat WhatsApp di kiri.</p>
-        </form>
+
+        <!-- Right: Form -->
+        <div class="bg-cream rounded-2xl p-6 md:p-8 shadow-soft-lg fade-in">
+          <h3 class="text-2xl font-bold text-primary-dark mb-2">Konsultasi Gratis</h3>
+          <p class="text-primary/60 text-sm mb-6">Isi form di bawah, kita hubungi dalam 2 jam.</p>
+
+          <form id="contact-form" class="space-y-4">
+            <div>
+              <label class="block text-sm font-medium text-primary-dark mb-1.5" for="nama">Nama</label>
+              <input type="text" id="nama" name="nama" required placeholder="Nama kamu"
+                class="form-input" />
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-primary-dark mb-1.5" for="email">Email</label>
+              <input type="email" id="email" name="email" required placeholder="email@kamu.com"
+                class="form-input" />
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-primary-dark mb-1.5" for="wa">WhatsApp</label>
+              <input type="tel" id="wa" name="wa" required placeholder="0812xxxxxxx"
+                class="form-input" />
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-primary-dark mb-1.5" for="pesan">Pesan</label>
+              <textarea id="pesan" name="pesan" rows="3" required placeholder="Cerita singkat kebutuhan kamu..."
+                class="form-input resize-none"></textarea>
+            </div>
+            <button type="submit" class="btn-primary w-full justify-center text-base py-3.5">
+              <i data-lucide="send" class="w-5 h-5"></i>
+              Kirim & Konsultasi
+            </button>
+            <p id="form-success" class="hidden text-sm text-green-600 text-center bg-green-50 rounded-lg py-3 px-4 border border-green-200">
+              ✅ Pesan terkirim! Kami akan hubungi kamu segera.
+            </p>
+          </form>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- FOOTER -->
-<footer class="footer">
-  <div class="container">
-    <div class="footer-left">
-      <a href="#hero" class="logo">
-        <span class="logo-mark">KD</span>
-        <span class="logo-text">Konsul Digital Indonesia</span>
-      </a>
-      <p class="footer-copy">© 2026 Konsul Digital Indonesia. All rights reserved.</p>
-    </div>
-    <div class="footer-socials">
-      <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
-      <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
-      <a href="https://wa.me/628xxxxx" aria-label="WhatsApp"><i data-lucide="message-circle"></i></a>
-    </div>
-  </div>
-</footer>
+  <!-- ============ FOOTER ============ -->
+  <footer class="bg-primary-dark text-cream/80 py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-3 gap-8 mb-8">
+        <div>
+          <div class="flex items-center gap-2 font-bold text-lg mb-4">
+            <span class="w-9 h-9 rounded-xl bg-primary flex items-center justify-center text-cream">
+              <i data-lucide="zap" class="w-5 h-5"></i>
+            </span>
+            <span class="text-cream">Konsul<span class="text-gold">Digital</span></span>
+          </div>
+          <p class="text-sm leading-relaxed text-cream/60 max-w-xs">
+            Agency produk digital & website untuk UMKM, coach, dan creator Indonesia.
+          </p>
+        </div>
 
-<script src="script.js"></script>
+        <div>
+          <h4 class="font-semibold text-cream mb-4">Navigasi</h4>
+          <ul class="space-y-2 text-sm" id="footer-links"></ul>
+        </div>
+
+        <div>
+          <h4 class="font-semibold text-cream mb-4">Hubungi Kami</h4>
+          <div class="space-y-3 text-sm">
+            <a href="https://wa.me/6281370264331" target="_blank" rel="noopener" class="flex items-center gap-2 hover:text-gold transition">
+              <i data-lucide="message-circle" class="w-4 h-4"></i> +62 813-7026-4331
+            </a>
+            <a href="mailto:hello@konsuldigital.id" class="flex items-center gap-2 hover:text-gold transition">
+              <i data-lucide="mail" class="w-4 h-4"></i> hello@konsuldigital.id
+            </a>
+            <div class="flex gap-3 pt-2">
+              <a href="https://instagram.com/konsuldigital.idn" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-lg bg-cream/10 hover:bg-gold hover:text-primary-dark flex items-center justify-center transition">
+                <i data-lucide="instagram" class="w-4 h-4 text-white"></i>
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener" class="w-9 h-9 rounded-lg bg-cream/10 hover:bg-gold hover:text-primary-dark flex items-center justify-center transition">
+                <i data-lucide="linkedin" class="w-4 h-4 text-white"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pt-8 border-t border-cream/10 text-center text-sm text-cream/50">
+        © 2026 Konsul Digital Indonesia. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+  <script>lucide.createIcons();</script>
 </body>
 </html>
